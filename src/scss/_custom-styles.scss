@@ -1,6 +1,40 @@
-// Your custom styles
-$bg-color: red;
+body,
+html {
+  height: 100%;
+}
 
 body {
-    background: $bg-color;
+  background-color: $git-color;
+}
+
+.parallax {
+  background-image: url("/img/hero-bg.jpg");
+  min-height: 768px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.responsiveImg {
+  max-width: 100%;
+  height: auto;
+}
+.title {
+  text-shadow: 2px 2px $black;
+}
+
+.subtitle {
+  text-shadow: 1px 1px $black;
+  font-weight: 200;
+}
+
+.col-centered {
+  float: none;
+  margin: 0 auto;
+}
+
+.cardIconSize {
+  font-size: 50px;
+  font-weight: 500;
 }

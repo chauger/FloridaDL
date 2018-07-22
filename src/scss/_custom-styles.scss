@@ -48,3 +48,23 @@ body {
   font-weight: 500;
 }
 
+@media (max-width: 575px) {
+  .parallaxHeader {
+    background-image: url("/img/hero-bg.jpg");
+    min-height: initial;
+    background-attachment: initial;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .parallaxDL {
+    background-image: url("/img/flbg.jpg");
+    height: initial;
+    background-attachment: initial;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+}

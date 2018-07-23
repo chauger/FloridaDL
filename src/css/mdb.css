@@ -5887,8 +5887,11 @@ html {
 body {
   background-color: #333333; }
 
+.headerbar {
+  max-height: 90px; }
+
 .parallaxHeader {
-  background-image: url("/img/hero-bg.jpg");
+  background-image: url("../img/hero-bg.jpg");
   min-height: 768px;
   background-attachment: fixed;
   background-position: center;
@@ -5896,7 +5899,7 @@ body {
   background-size: cover; }
 
 .parallaxDL {
-  background-image: url("/img/flbg.jpg");
+  background-image: url("../img/flbg.jpg");
   height: auto;
   background-attachment: fixed;
   background-position: bottom;
@@ -5921,6 +5924,9 @@ body {
 .cardIconSize {
   font-size: 50px;
   font-weight: 500; }
+
+.card-title {
+  font-weight: 400; }
 
 @media (max-width: 575px) {
   .parallaxHeader {

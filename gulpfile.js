@@ -23,15 +23,6 @@ gulp.task('concatCSS', function () {
     .pipe(gulp.dest('src/css'))
 })
 
-gulp.task('concatJS', function () {
-  return gulp.src([
-    'src/js/jquery-3.3.1.min.js',
-    'src/js/mdb.min.js'
-  ])
-    .pipe(concat('addfldl.js'))
-    .pipe(gulp.dest('src/js'))
-})
-
 // Static Server + watching scss/html files
 gulp.task('serve', ['sass'], function () {
   browserSync.init({
@@ -43,4 +34,4 @@ gulp.task('serve', ['sass'], function () {
   gulp.watch('src/*.html').on('change', browserSync.reload)
 })
 
-gulp.task('default', ['concatCSS', 'concatJS', 'serve'])
+gulp.task('default', ['concatCSS', 'serve'])
